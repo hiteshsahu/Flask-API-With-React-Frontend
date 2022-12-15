@@ -5,13 +5,16 @@
 
 ## **SETUP** ⚙️
 
-    pip install Flask
+    pip3 install Flask
 
 -----
 
 ## **BUILD** 🏗️
 
 Debug Run
+
+export FLASK_APP=flaskr
+export FLASK_ENV=development
 
     flask --app flaskr --debug run
 

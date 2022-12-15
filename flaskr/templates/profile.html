@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hello from Flask</title>
+</head>
+   <body>
+   <h1>Profile Page!</h1>
+{% if name %}
+  <h2>Welcome to {{ name }} Profile!</h2>
+{% else %}
+  <h2>User name not found!</h2>
+{% endif %}
+
+    <a href="/"> Home</a>
+   </body>
+</html>

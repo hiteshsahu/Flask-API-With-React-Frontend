@@ -1,0 +1,22 @@
+<head>
+      <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+   </head>
+
+   <body>
+    <h1>Home Page!</h1>
+
+      {% if name %}
+  <h2>Hello {{ name }}!</h2>
+      <a href="./logout">Logout</a>
+      {% else %}
+  <h4>Login to see your profile!</h4>
+           <a href="./login"> Login</a>
+    {% endif %}
+
+      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+
+
+
+
+   </body>
