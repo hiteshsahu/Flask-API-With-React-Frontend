@@ -6,6 +6,7 @@ from flask import Flask, \
     make_response, \
     session
 import logging
+import time
 from . import constants
 
 
@@ -39,6 +40,17 @@ app = create_app()
 @app.route('/')
 def index():
     return show_home()
+
+
+@app.route('/hello')
+def say_hello():
+    return {'time': "Hello World"}
+
+
+@app.route('/time')
+def get_current_time():
+    return {'time': time.time()}
+
 
 
 @app.route('/home')
