@@ -40,6 +40,7 @@ Start Front end
 Start API server via cmd prompt
 
 > cd api
+
 > python3 -m flask  run
 
 OR use npm to start API
